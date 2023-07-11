@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/fonts.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__content">
+    <button class="header__burger">
+      <span class="header__burger-line"></span>
+    </button>
+    <div class="header__top">
+        <div class="header__logo">
+          <img class="header__logo-img" src="./assets/svg/logo.svg" alt="logo">
+        </div>
+        <div class="header__address">
+          <div class="header__map">
+            <div class="header__map-icon">
+              <img src="./assets/svg/position.svg" alt="map position">
+            </div>
+            <p class="header__map-text">г. Ставрополь, ул. Пушкина 272</p>
+          </div>
+          <ul class="header__social">
+            <li class="header__social-item"><a href="#" class="header__social-link"><img src="./assets/svg/telegram.svg" alt="telegram"></a></li>
+            <li class="header__social-item"><a href="#" class="header__social-link"><img src="./assets/svg/whatsApp.svg" alt="whatsApp"></a></li>
+          </ul>
+          <div class="header__phone">
+            <h2 class="header__phone-number">+7 (123) 45-67-89</h2>
+            <button class="header__phone-button">Перезвоните мне</button>
+          </div>
+        </div>
+    </div>
+    <button class="header__call-button">Позвонить</button>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Расчёт стоимости</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link header__nav-link--active">О нас</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Выездная регистрация</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Схемы залов</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Меню</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Галерея</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Отзывы</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="modal">
+      <div class="modal__container">
+        <div class="modal__content">
+          <div class="modal__description">
+            <h2 class="modal__title">Оставьте заявку</h2>
+            <p class="modal__text">Скоро с вами свяжется администратор</p>
+            <p class="modal__sub-text">Нажимая на кнопку «Отправить», Вы соглашаетесь с
+              <a class="modal__sub-text-link" href="#">Политикой конфиденциальности</a>
+            </p>
+          </div>
+          <form class="modal__form">
+            <label class="modal__label">
+              <span class="modal__label-text">Ваше имя</span>
+              <input type="text" class="modal__label-input">
+            </label>
+            <label class="modal__label">
+              <span class="modal__label-text">Ваш номер телефона</span>
+              <input type="text" class="modal__label-input">
+            </label>
+            <button class="modal__form-button">Забронировать</button>
+          </form>
+          <button type="button" class="modal__close-button"></button>
+        </div>
+    </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="quiz">
+      <h1 class="quiz__title">Рассчитайте стоимость вашего банкета</h1>
+      <p class="quiz__text">Ответьте на 5 вопросов и получите горку из шампанского в подарок</p>
+      <div class="quiz__content">
+        <div class="quiz__questions">
+          <p class="quiz__questions-count">
+            Вопрос
+            <span class="quiz__questions-min"></span>
+            Из
+            <span class="quiz__questions-max"></span>
+          </p>
+          <div class="quiz__questions-progress-line"></div>
+          <h2 class="quiz__questions-title"></h2>
+          <div class="quiz__questions-labels"></div>
+          <div class="quiz__questions-line"></div>
+          <button class="quiz__questions-button">Следующий вопрос</button>
+        </div>
+        <div class="quiz__info">
+          <p class="quiz__info-text">Ответьте на 5 вопросов и получите горку из шампанского в подарок</p>
+          <img src="./assets/questions-bottle.png" alt="bottle" class="quiz__info-img">
+          <button class="quiz__info-start-button">Начать</button>
+        </div>
+      </div>
+    </section>
+    <section class="hall">
+      <h2 class="hall__title">Схемы залов</h2>
+      <div class="hall__tabs">
+        <button class="hall__tabs-button hall__tabs-button--active">Зал Первый</button>
+        <button class="hall__tabs-button">Зал Второй</button>
+      </div>
+      <div class="hall__content">
+        <img class="hall__img" alt="hall plan">
+        <div class="hall__info">
+          <h3 class="hall__info-title"></h3>
+          <div class="hall__info-description">
+            <div class="hall__info-description-row">
+              <div class="hall__info-description-text"></div>
+              <div class="hall__info-description-value"></div>
+            </div>
+            <div class="hall__info-description-row">
+              <div class="hall__info-description-text"></div>
+              <div class="hall__info-description-value"></div>
+            </div>
+            <div class="hall__info-description-row">
+              <div class="hall__info-description-text"></div>
+              <div class="hall__info-description-value"></div>
+            </div>
+          </div>
+          <div class="hall__info-buttons">
+            <button class="hall__info-button">Забронировать</button>
+            <button class="hall__info-button hall__info-button--bordered">Посмотреть галерею</button>
+          </div>
+        </div>
+    </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__top">
+        <div class="footer__logo">
+          <img src="./assets/svg/logo-white.svg" alt="hotel stravropol logo">
+        </div>
+        <div class="footer__social">
+          <h2 class="footer__social-title">Мы в соц. сетях</h2>
+          <ul class="footer__social-list">
+            <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="./assets/svg/fb.svg" alt="facebook"></a></li>
+            <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="./assets/svg/whatsApp.svg" alt="whatsApp"></a></li>
+            <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="./assets/svg/vk.svg" alt="vk"></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">© Hotel Stavropol, 2020</p>
+    </div>
+  </div>
+  </footer>
+  <script type="module" src="./scripts/init.js"></script>
+</body>
+</html>
