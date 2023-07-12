@@ -57,7 +57,7 @@ const showQuestions = () => {
   questionsTitleElement.textContent = title;
   questionsContainerElement.append(...questElements);
   currentQuestLevel += 1;
-  questionsProgressLineElement.style.width = `${(currentQuestLevel * 100) / MAX_QUESTION_COUNT}%`;
+  questionsProgressLineElement.style.width = `${(currentQuestLevel * 100) / MAX_QUESTION_COUNT - 5}%`;
   currentQuestionCountElement.textContent = currentQuestLevel;
 };
 
